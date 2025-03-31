@@ -7,6 +7,8 @@ const translations = {
         products: "أعمالنا",
         Contact: "اتصل بنا",
       },
+      title: "التميز | تصميم المواقع وخدمات الويب ",
+      direction: "rtl",
       pageheaderbox:
         '<h1 class="text-anime-style-2" > جميع <span>خدماتنا</span></h1>',
       newsletterTitle:

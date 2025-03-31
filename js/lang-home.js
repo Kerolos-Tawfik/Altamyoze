@@ -7,20 +7,20 @@ const translations = {
             products: "أعمالنا",
             Contact: "اتصل بنا"
         },
-        title: "موقعي",
+        title: "التميز | تصميم المواقع وخدمات الويب ",
         direction: "rtl",
-        heroTitle: "نقدّم أفضل خدمات <span>تصميم المواقع وخدمات الويب.</span>",
-        heroText: "شركة التميز متخصصة في تصميم وتطوير المواقع وحلول الويب المتكاملة. نساعدك في بناء حضور رقمي احترافي يعكس هويتك ويحقق أهدافك. ابتكر، تواصل، وانطلق معنا نحو النجاح!",
-        buttonText: "ابدأ مشروعك",
-        clientText: "العميل الراضي",
+        heroTitle: "نقدّم أفضل خدمات <span>اجعل حضورك الرقمي يتحدث عنك!</span>",
+        heroText: "موقعك او تطبيقك هو أكثر من مجرد صفحات... إنه انطباعك الأول، هويتك، فرصتك للنجاح! نحن لا نصمم مواقع، بل نصنع تجارب تبقى في أذهان عملائك.",
+        buttonText: "تواصل معنا",
+        clientText: "قصة نجاح... هل ستكون القصة التالية؟",
 
         aboutUs: {
             title: "من نحن",
-            heading: "شركة التميز متخصصة في تطوير المواقع الإلكترونية",
-            text: "تعد شركة التميز لتطوير الويب واحدة من الشركات الرائدة في مجال تكنولوجيا المعلومات في قطر، وهي من أفضل شركات تطوير وتصميم مواقع الانترنت، بخبرة تمتد لأكثر من 10 سنوات.",
-            experience: "سنوات من الخبرة <span>تطوير المواقع الإلكترونية</span>",
-            contactNow: "تواصل الآن",
-            authorRole: "مصمم مواقع",
+            heading: "نحن لا نصمم مواقع الكترونيه فقط...! نحن نصنع تجارب رقمية لا تُنسى",
+            text: "نحوّل أفكارك إلى واقع رقمي مميز! مع أكثر من 10 سنوات من الخبرة، نحن نساعدك على بناء خدمتك الالكترونيه التي تعكس هويتك وتجذب عملاءك من اللحظة الأولى.",
+            experience: "سنوات من الخبرة <span>تطوير الخدمات الإلكترونية</span>",
+            contactNow: "حجز استشارة مجانية اليوم!",
+            authorRole: "",
             services: [
                 "حلول برمجة مخصصة",
                 "متابعة أحدث تقنيات الويب",
@@ -33,7 +33,7 @@ const translations = {
 
         services: {
             title: "خدماتنا",
-            heading: "خدمات <span>التميز</span> لتطوير الويب",
+            heading: "لخدمات <span>التميز</span> الالكترونيه",
             viewAll: "عرض جميع الخدمات",
             consultation: "<span>مجاني</span> احصل على استشارة سريعة وناقش فكرتك التجارية معنا <a href='https://wa.me//97450318931' target='_blank'>ابدأ الآن معنا</a>.",
             items: [
@@ -176,18 +176,20 @@ const translations = {
             products: "Portfolio",
             Contact: "Contact Us"
         },
-        title: "My Website",
+        title: "التميز | تصميم المواقع وخدمات الويب ",
         direction: "ltr",
-        heroTitle: "We provide the best <span>web design and digital services.</span>",
-        heroText: "Excellence Company specializes in website design, development, and integrated web solutions. We help you build a professional digital presence that reflects your identity and achieves your goals. Innovate, connect, and launch towards success with us!",
-        buttonText: "Start Your Project",
-        clientText: "Satisfied Clients",
+        heroTitle: "We provide the best services <span>Make your digital presence speak for you!</span>",
+        heroText: "Your website or app is more than just pages... It's your first impression, your identity, and your opportunity for success! We don't just design websites; we create experiences that stay in your customers' minds.",
+        buttonText: "Contact Us",
+        clientText: "A success story... Will you be the next one?",
+        
         aboutUs: {
             title: "About Us",
-            heading: "Excellence Company specializes in Web Development",
-            text: "Excellence Web Development is one of the leading technology companies in Qatar. It is among the best companies for web design and development, with over 10 years of expertise.",
-            experience: "Years of Experience <span>in Web Development</span>",
-            contactNow: "Contact Now",
+            heading: "We don't just design websites...! We create unforgettable digital experiences.",
+            text: "We transform your ideas into a unique digital reality! With over 10 years of experience, we help you build your digital service that reflects your identity and captivates your customers from the very first moment.",
+            experience: "Years of experience in <span>developing digital services</span>",
+            contactNow: "Book a free consultation today!",
+            
             authorRole: "Web Designer",
         },
 

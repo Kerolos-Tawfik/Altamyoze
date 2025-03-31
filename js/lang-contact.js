@@ -110,9 +110,10 @@ const translations = {
      
     },
   };
-  
+   setTimeout(() => {}, 1000); // Simulate preloader delay
   const loadLanguage = () => {
     const savedLang = localStorage.getItem("selectedLang") || "ar";
+   
     updatePageLanguage(savedLang);
     document.getElementById("language-toggle").checked = savedLang === "en";
   };
