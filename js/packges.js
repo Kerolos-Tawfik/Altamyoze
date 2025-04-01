@@ -490,14 +490,13 @@ packagesMedia: [
     document.querySelector(".our-pricing.media div h2").textContent =
       selectedLang.media;
     document.querySelectorAll(".pricing-item.mobile").forEach((item, index) => {
-        console.log(item);
         item.querySelector(".pricing-header h3").textContent = translations[lang].packagesMobile[index].title;
         item.querySelector(".pricing-header p").textContent = translations[lang].packagesMobile[index].description;
         item.querySelector(".pricing-header h2").innerHTML = translations[lang].packagesMobile[index].price;
         item.querySelector(".pricing-body a").textContent = translations[lang].packagesMobile[index].button;
-        const featuresList = item.querySelector(".pricing-footer ul");
+        const featuresList = item.querySelector(".pricing-footer.mobile ul");
         featuresList.innerHTML = "";
-        translations[lang].packages[index].features.forEach(feature => {
+        translations[lang].packagesMobile[index].features.forEach(feature => {
             const li = document.createElement("li");
             li.innerHTML = feature;
             li.className = "time";
@@ -511,7 +510,7 @@ packagesMedia: [
         item.querySelector(".pricing-header p").textContent = translations[lang].packages[index].description;
         item.querySelector(".pricing-header h2").innerHTML = translations[lang].packages[index].price;
         item.querySelector(".pricing-body a").textContent = translations[lang].packages[index].button;
-        const featuresList = item.querySelector(".pricing-footer ul");
+        const featuresList = item.querySelector(".pricing-footer.graphics ul");
         featuresList.innerHTML = "";
         translations[lang].packages[index].features.forEach(feature => {
             const li = document.createElement("li");
@@ -525,8 +524,8 @@ packagesMedia: [
         item.querySelector(".pricing-header p").textContent = translations[lang].packagesWeb[index].description;
         item.querySelector(".pricing-header h2").innerHTML = translations[lang].packagesWeb[index].price;
         item.querySelector(".pricing-body a").textContent = translations[lang].packagesWeb[index].button;
-        console.log(item.querySelector(".pricing-body a").textContent);
-        const featuresList = item.querySelector(".pricing-footer ul");
+
+        const featuresList = item.querySelector(".pricing-footer.web ul");
         featuresList.innerHTML = "";
         translations[lang].packagesWeb[index].features.forEach(feature => {
             const li = document.createElement("li");
@@ -544,13 +543,14 @@ packagesMedia: [
         item.querySelector(".pricing-header h2").innerHTML = translations[lang].packagesMedia[index].price;
         item.querySelector(".pricing-body a").textContent = translations[lang].packagesMedia[index].button;
         
-        const featuresList = item.querySelector(".pricing-footer ul");
+        const featuresList = item.querySelector(".pricing-footer.media ul");
         featuresList.innerHTML = "";
-        translations[lang].packages[index].features.forEach(feature => {
+        translations[lang].packagesMedia[index].features.forEach(feature => {
             const li = document.createElement("li");
             li.innerHTML = feature;
             li.className = "time";
             featuresList.appendChild(li);
+            console.log(translations[lang].packages[index].features)
         });
     });
 
