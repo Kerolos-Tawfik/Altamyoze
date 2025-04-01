@@ -156,9 +156,8 @@ const translations = {
   
     let supportLinks = document.querySelectorAll(".footer-links.four ul li a");
     supportLinks[0].textContent = selectedLang.help;
-    supportLinks[1].textContent = selectedLang.privacy;
-    supportLinks[2].textContent = selectedLang.terms;
-    supportLinks[3].textContent = selectedLang.contact;
+ 
+    supportLinks[1].textContent = selectedLang.contact;
   
     document.querySelector(".footer-copyright-text p").textContent =
       selectedLang.copyright;
