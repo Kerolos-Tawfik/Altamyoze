@@ -222,7 +222,7 @@ packagesMedia: [
         Contact: "Contact Us",
       },
       pageheaderbox:
-        '<h1 class="text-anime-style-2" data-cursor="-opaque">All <span>Our Works</span></h1>',
+        '<h1 class="text-anime-style-2" data-cursor="-opaque">All <span>Our Packages</span></h1>',
       newsletterTitle:
         "<h2> Let's Achieve Excellence in <span> Your Website</span></h2>",
       newsletterPlaceholder: "Enter Your Email",
