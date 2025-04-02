@@ -169,7 +169,7 @@ packagesMedia: [
     {
         title: "الباقة البرونزية",
         description: "تستهدف إدارة محتوى السوشيال ميديا، تحسين الـ SEO، حملات إعلانية أساسية، استراتيجيات البريد الإلكتروني، تقارير وتحليلات شهرية، واستشارة لمدة شهر.",
-        price: "<h2>1800<sup>ريال</sup><sub> بعد الخصم من 2000 </sub></h2>",
+        price: "<h2>1800<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 2000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
             "إدارة محتوى السوشيال ميديا",
@@ -183,7 +183,7 @@ packagesMedia: [
     {
         title: "الباقة الفضية",
         description: "تشمل إدارة الحملات الإعلانية، تحسين إعلانات Google، تجربة المستخدم، التسويق عبر الإيميل، وتحليل SEO متقدم.",
-        price: "<h2>2700<sup>ريال</sup><sub> بعد الخصم من 5000 </sub></h2>",
+        price: "<h2>2700<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 5000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
             "إدارة الحملات الإعلانية",
@@ -196,7 +196,7 @@ packagesMedia: [
     {
         title: "الباقة الذهبية",
         description: "تتضمن استراتيجية تسويق رقمي متكاملة، إدارة الحملات، تحسين الـ SEO، تحليلات متقدمة، واستشارة لمدة 6 شهور.",
-        price: "<h2>4000<sup>ريال</sup><sub> بعد الخصم من 10000 </sub></h2>",
+        price: "<h2>4000<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 10000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
             "استراتيجية تسويق رقمي متكاملة",
