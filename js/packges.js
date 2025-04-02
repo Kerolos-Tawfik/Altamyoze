@@ -38,7 +38,7 @@ const translations = {
         {
             title: "الباقة البرونزية",
             description: "تصاميم احترافية تُبرز هوية العلامة التجارية بأسلوب متناسق وميسر، مما يُعد انطلاقة قوية للظهور على منصات التواصل. هذه الباقة تضمن تقديم تصاميم مدروسة تعكس رؤية العميل وتدعم مكانته السوقية.",
-            price: "<h2>375<sup>ريال</sup></h2>",
+            price: "<h2>300<sup>ريال</sup></h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم <span>8</span> بوستات احترافية لمنصات التواصل الاجتماعي",
@@ -50,7 +50,7 @@ const translations = {
         {
             title: "الباقة الفضية",
             description: "تصاميم متطورة تجمع بين الإبداع والاحترافية لتطوير صورة العلامة التجارية، مع تضمين عناصر حديثة مثل البنرات والفيديوهات القصيرة، تساعد هذه الباقة في تعزيز التفاعل الرقمي وتقديم محتوى متجدد يُواكب تطلعات السوق.",
-            price: "<h2>900<sup>ريال</sup></h2>",
+            price: "<h2>400<sup>ريال</sup></h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم <span>15</span> بوستًا احترافيًا لمنصات التواصل الاجتماعي",
@@ -62,7 +62,7 @@ const translations = {
         {
             title: "الباقة الذهبية",
             description: "خدمات تصميم شاملة تُبرز هوية العلامة التجارية بشكل استثنائي، مع تقديم فيديو موشن جرافيك متكامل وبنرات احترافية متعددة المقاسات. هذه الباقة مصممة لقيادة السوق وإبراز تميز العميل عبر محتوى بصري راقٍ ومتكامل.",
-            price: "<h2>1500<sup>ريال</sup></h2>",
+            price: "<h2>1200<sup>ريال</sup></h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم <span>25</span> بوستًا احترافيًا لمنصات التواصل الاجتماعي",
@@ -79,7 +79,7 @@ const translations = {
         {
             title: "الباقة البرونزية",
             description: "احصل على موقع احترافي يعكس هوية نشاطك التجاري بأفضل أداء وتصميم متجاوب مع جميع الأجهزة. هذه الباقة مثالية للشركات الناشئة ورواد الأعمال الذين يحتاجون إلى موقع أنيق وسهل الاستخدام يعزز تواجدهم الرقمي.",
-            price: "<h2 >800<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 1600 </sub> </h2>",
+            price: "<h2 >850<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 1600 </sub> </h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم وتطوير موقع صفحة واحدة احترافي",
@@ -93,7 +93,7 @@ const translations = {
         {
             title: "الباقة الفضية",
             description: "باقة متقدمة تناسب المشاريع المتوسطة والشركات التي ترغب في تطوير موقع ديناميكي احترافي يعزز نمو أعمالها عبر الإنترنت، مع تحسينات متقدمة لتجربة المستخدم وأداء الموقع.",
-            price:  "<h2 >1300<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 2600 </sub> </h2>",
+            price:  "<h2 >1260<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 2600 </sub> </h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم وتطوير موقع متكامل بعدد <span>5</span> صفحات",
@@ -107,7 +107,7 @@ const translations = {
         {
             title: "الباقة الذهبية",
             description: "خيارك الأمثل للحصول على موقع احترافي بمزايا متقدمة تناسب الشركات الكبرى والمتاجر الإلكترونية، مع تصميم فريد وأداء عالي لضمان تجربة مستخدم استثنائية تزيد من مبيعاتك.",
-            price:  "<h2 >1700<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 3400 </sub> </h2>",
+            price:  "<h2 >1599<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 3400 </sub> </h2>",
             button: "احصل عليها الآن",
             features: [
                 "تصميم وتطوير موقع مخصص بالكامل وفق احتياجات العميل",
@@ -168,47 +168,46 @@ const translations = {
 packagesMedia: [
     {
         title: "الباقة البرونزية",
-        description: "عزز ظهور علامتك التجارية عبر الإنترنت من خلال استراتيجية تسويق رقمي فعالة، مثالية للشركات الناشئة التي ترغب في زيادة التفاعل وزيادة قاعدة العملاء.",
-        price: "<h2>1500<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 3000 </sub></h2>",
+        description: "تستهدف إدارة محتوى السوشيال ميديا، تحسين الـ SEO، حملات إعلانية أساسية، استراتيجيات البريد الإلكتروني، تقارير وتحليلات شهرية، واستشارة لمدة شهر.",
+        price: "<h2>1800<sup>ريال</sup><sub> بعد الخصم من 2000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
-            "إدارة وإنشاء محتوى لمنصات التواصل الاجتماعي",
-            "تحسين محركات البحث (SEO) لتحسين ترتيب الموقع في جوجل",
-            "إطلاق حملات إعلانية أساسية على فيسبوك وإنستجرام",
-            "إعداد استراتيجيات البريد الإلكتروني التسويقي",
-            "تقارير أداء أسبوعية لمتابعة التحسينات",
-            "استشارة ودعم استراتيجي لمدة <span>شهر واحد</span>"
+            "إدارة محتوى السوشيال ميديا",
+            "تحسين محركات البحث (SEO)",
+            "حملات إعلانية أساسية",
+            "استراتيجيات البريد الإلكتروني",
+            "تقارير وتحليلات شهرية",
+            "استشارة لمدة شهر"
         ]
     },
     {
         title: "الباقة الفضية",
-        description: "باقة متقدمة تناسب الشركات التي تسعى إلى توسيع انتشارها الرقمي وزيادة معدلات التحويل من خلال استراتيجيات تسويقية فعالة.",
-        price: "<h2>3000<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 6000 </sub></h2>",
+        description: "تشمل إدارة الحملات الإعلانية، تحسين إعلانات Google، تجربة المستخدم، التسويق عبر الإيميل، وتحليل SEO متقدم.",
+        price: "<h2>2700<sup>ريال</sup><sub> بعد الخصم من 5000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
-            "إدارة كاملة لحملات التسويق على وسائل التواصل الاجتماعي",
-            "إعلانات Google Ads و PPC لتحقيق أعلى عائد استثمار",
-            "تحليل وتحسين تجربة المستخدم لمضاعفة معدلات التحويل",
-            "التسويق عبر البريد الإلكتروني باستخدام أدوات الأتمتة",
-            "تحليل SEO متقدم واستراتيجية بناء روابط",
-            "استشارة ودعم استراتيجي لمدة <span>3 شهور</span>"
+            "إدارة الحملات الإعلانية",
+            "تحسين إعلانات Google",
+            "تحسين تجربة المستخدم",
+            "التسويق عبر البريد الإلكتروني",
+            "تحليل SEO متقدم"
         ]
     },
     {
         title: "الباقة الذهبية",
-        description: "الحل الأمثل للشركات والمتاجر التي تبحث عن تسويق رقمي شامل مدعوم بأدوات الذكاء الاصطناعي لتحقيق أقصى نتائج.",
-        price: "<h2>5000<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 10000 </sub></h2>",
+        description: "تتضمن استراتيجية تسويق رقمي متكاملة، إدارة الحملات، تحسين الـ SEO، تحليلات متقدمة، واستشارة لمدة 6 شهور.",
+        price: "<h2>4000<sup>ريال</sup><sub> بعد الخصم من 10000 </sub></h2>",
         button: "احصل عليها الآن",
         features: [
-            "إعداد وتنفيذ استراتيجية تسويق رقمي مخصصة",
-            "إدارة متكاملة للإعلانات ووسائل التواصل الاجتماعي",
-            "التعاون مع المؤثرين لزيادة الوعي بالعلامة التجارية",
-            "تحسين محركات البحث SEO وتقنيات بناء الروابط المتقدمة",
-            "تحليل سلوك العملاء عبر الذكاء الاصطناعي لاستهداف أدق",
-            "استشارة ودعم استراتيجي لمدة <span>6 شهور</span>"
+            "استراتيجية تسويق رقمي متكاملة",
+            "إدارة الحملات الإعلانية",
+            "تحسين محركات البحث (SEO)",
+            "تحليلات متقدمة",
+            "استشارة لمدة 6 شهور"
         ]
     }
 ],
+
 
     
 
@@ -340,7 +339,7 @@ packagesMedia: [
             {
                 title: "Bronze Package",
                 description: "Get a professional website that reflects your brand identity with optimal performance and responsive design. This package is perfect for startups and entrepreneurs looking for an elegant and user-friendly site to enhance their online presence.",
-                price: "<h2>800<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 1600 </sub></h2>",
+                price: "<h2>850<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 1600 </sub></h2>",
                 button: "Get it now",
                 features: [
                     "One-page professional website design and development",
@@ -354,7 +353,7 @@ packagesMedia: [
             {
                 title: "Silver Package",
                 description: "An advanced package suitable for medium-sized businesses and enterprises looking for a dynamic and professional website with enhanced user experience and performance.",
-                price: "<h2>1300<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 2600 </sub></h2>",
+                price: "<h2>1260<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 2600 </sub></h2>",
                 button: "Get it now",
                 features: [
                     "Complete website design and development with <span>5</span> pages",
@@ -368,7 +367,7 @@ packagesMedia: [
             {
                 title: "Gold Package",
                 description: "The ultimate choice for businesses and e-commerce platforms looking for a fully customized website with advanced features, unique design, and high performance to maximize sales.",
-                price: "<h2>1700<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 3400 </sub></h2>",
+                price: "<h2>1599<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 3400 </sub></h2>",
                 button: "Get it now",
                 features: [
                     "Fully customized website tailored to client needs",
@@ -386,44 +385,42 @@ packagesMedia: [
 packagesMedia: [
     {
         title: "Bronze Package",
-        description: "Boost your brand’s online visibility with a solid foundation in digital marketing. Perfect for small businesses looking to expand their reach and increase engagement.",
-        price: "<h2>1500<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 3000 </sub></h2>",
+        description: "Targets social media content management, SEO improvement, basic advertising campaigns, email strategies, monthly reports, and a one-month consultation.",
+        price: "<h2>1500<sup>QAR</sup><sub> after discount from 2000 </sub></h2>",
         button: "Get it now",
         features: [
-            "Social media content creation & management",
-            "SEO optimization for better Google ranking",
-            "Basic ad campaigns on Facebook & Instagram",
-            "Email marketing strategy & setup",
-            "Weekly performance reports",
-            "Technical support & strategy consultation for <span>1 month</span>"
+            "Social media content management",
+            "SEO optimization",
+            "Basic advertising campaigns",
+            "Email marketing strategies",
+            "Monthly reports and analysis",
+            "One-month consultation"
         ]
     },
     {
         title: "Silver Package",
-        description: "An advanced digital marketing package with high-converting strategies, perfect for businesses aiming to scale their online presence and generate leads.",
-        price: "<h2>3000<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 6000 </sub></h2>",
+        description: "Includes advertising campaign management, Google Ads optimization, user experience improvement, email marketing, and advanced SEO analysis.",
+        price: "<h2>2700<sup>QAR</sup><sub> after discount from 5000 </sub></h2>",
         button: "Get it now",
         features: [
-            "Full-scale social media campaign management",
-            "Google Ads & PPC advertising",
-            "Content marketing & blog writing",
-            "Email automation & retargeting campaigns",
-            "SEO optimization with keyword research",
-            "Technical support & strategy consultation for <span>3 months</span>"
+            "Advertising campaign management",
+            "Google Ads optimization",
+            "User experience improvement",
+            "Email marketing",
+            "Advanced SEO analysis"
         ]
     },
     {
         title: "Gold Package",
-        description: "The ultimate digital marketing solution with AI-powered targeting, high-end conversion strategies, and advanced analytics for maximizing revenue.",
-        price: "<h2>2000<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 10000 </sub></h2>",
+        description: "Includes a comprehensive digital marketing strategy, campaign management, SEO improvement, advanced analytics, and a 6-month consultation.",
+        price: "<h2>3500<sup>QAR</sup><sub> after discount from 10000 </sub></h2>",
         button: "Get it now",
         features: [
-            "Custom-built marketing strategy tailored to business needs",
-            "Full social media advertising & content creation",
-            "Influencer marketing collaborations",
-            "Advanced SEO & backlink-building strategy",
-            "AI-driven audience targeting & retargeting",
-            "Technical support & strategy consultation for <span>6 months</span>"
+            "Comprehensive digital marketing strategy",
+            "Campaign management",
+            "SEO optimization",
+            "Advanced analytics",
+            "6-month consultation"
         ]
     }
 ],
