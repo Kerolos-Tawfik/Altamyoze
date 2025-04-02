@@ -252,7 +252,7 @@ packagesMedia: [
         {
             title: "Bronze Package",
             description: "Professional designs that highlight the brand identity in a consistent and streamlined manner, ensuring a strong launch for social media presence. This package guarantees well-thought-out designs that reflect the client's vision and enhance their market position.",
-            price: "<h2>375<sup>SAR</sup></h2>",
+            price: "<h2>300<sup>SAR</sup></h2>",
             button: "Get it now",
             features: [
                 "Design of <span>8</span> professional social media posts",
@@ -264,7 +264,7 @@ packagesMedia: [
         {
             title: "Silver Package",
             description: "Advanced designs that blend creativity and professionalism to develop a brand’s image, incorporating modern elements like banners and short videos. This package helps enhance digital interaction and deliver refreshed content that keeps up with market trends.",
-            price: "<h2>900<sup>SAR</sup></h2>",
+            price: "<h2>400<sup>SAR</sup></h2>",
             button: "Get it now",
             features: [
                 "Design of <span>15</span> professional social media posts",
@@ -276,7 +276,7 @@ packagesMedia: [
         {
             title: "Gold Package",
             description: "Comprehensive design services that exceptionally highlight brand identity, including a full-motion graphics video and professional multi-size banners. This package is designed to lead the market and showcase the client's distinction through premium visual content.",
-            price: "<h2>1500<sup>SAR</sup></h2>",
+            price: "<h2>1200<sup>SAR</sup></h2>",
             button: "Get it now",
             features: [
                 "Design of <span>25</span> professional social media posts",
@@ -386,7 +386,7 @@ packagesMedia: [
     {
         title: "Bronze Package",
         description: "Targets social media content management, SEO improvement, basic advertising campaigns, email strategies, monthly reports, and a one-month consultation.",
-        price: "<h2>1500<sup>QAR</sup><sub> after discount from 2000 </sub></h2>",
+        price: "<h2>1500<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 2000 </sub></h2>",
         button: "Get it now",
         features: [
             "Social media content management",
@@ -400,7 +400,7 @@ packagesMedia: [
     {
         title: "Silver Package",
         description: "Includes advertising campaign management, Google Ads optimization, user experience improvement, email marketing, and advanced SEO analysis.",
-        price: "<h2>2700<sup>QAR</sup><sub> after discount from 5000 </sub></h2>",
+        price: "<h2>2700<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 5000 </sub></h2>",
         button: "Get it now",
         features: [
             "Advertising campaign management",
@@ -413,7 +413,7 @@ packagesMedia: [
     {
         title: "Gold Package",
         description: "Includes a comprehensive digital marketing strategy, campaign management, SEO improvement, advanced analytics, and a 6-month consultation.",
-        price: "<h2>3500<sup>QAR</sup><sub> after discount from 10000 </sub></h2>",
+        price: "<h2>4000<sup>SAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 10000 </sub></h2>",
         button: "Get it now",
         features: [
             "Comprehensive digital marketing strategy",
