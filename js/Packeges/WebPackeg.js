@@ -33,7 +33,7 @@ const translations = {
             {
                 title: "الباقة البرونزية",
                 description: "احصل على موقع احترافي يعكس هوية نشاطك التجاري بأفضل أداء وتصميم متجاوب مع جميع الأجهزة. هذه الباقة مثالية للشركات الناشئة ورواد الأعمال الذين يحتاجون إلى موقع أنيق وسهل الاستخدام يعزز تواجدهم الرقمي.",
-                price: "<h2 >850<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 1600 </sub> </h2>",
+                price: "<h2 >800<sup>ريال</sup><sub> </h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تصميم وتطوير موقع صفحة واحدة احترافي",
@@ -47,7 +47,7 @@ const translations = {
             {
                 title: "الباقة الفضية",
                 description: "باقة متقدمة تناسب المشاريع المتوسطة والشركات التي ترغب في تطوير موقع ديناميكي احترافي يعزز نمو أعمالها عبر الإنترنت، مع تحسينات متقدمة لتجربة المستخدم وأداء الموقع.",
-                price: "<h2 >1260<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 2600 </sub> </h2>",
+                price: "<h2 >1150<sup>ريال</sup><sub> </h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تصميم وتطوير موقع متكامل بعدد <span>5</span> صفحات",
@@ -61,7 +61,7 @@ const translations = {
             {
                 title: "الباقة الذهبية",
                 description: "خيارك الأمثل للحصول على موقع احترافي بمزايا متقدمة تناسب الشركات الكبرى والمتاجر الإلكترونية، مع تصميم فريد وأداء عالي لضمان تجربة مستخدم استثنائية تزيد من مبيعاتك.",
-                price: "<h2 >1599<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 3400 </sub> </h2>",
+                price: "<h2 >1400<sup>ريال</sup><sub></h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تصميم وتطوير موقع مخصص بالكامل وفق احتياجات العميل",
@@ -139,7 +139,7 @@ const translations = {
             {
                 title: "Bronze Package",
                 description: "Get a professional website that reflects your brand identity with optimal performance and responsive design. This package is perfect for startups and entrepreneurs looking for an elegant and user-friendly site to enhance their online presence.",
-                price: "<h2>850<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 1600 </sub></h2>",
+                price: "<h2>800<sup>QAR",
                 button: "Get it now",
                 features: [
                     "One-page professional website design and development",
@@ -153,7 +153,7 @@ const translations = {
             {
                 title: "Silver Package",
                 description: "An advanced package suitable for medium-sized businesses and enterprises looking for a dynamic and professional website with enhanced user experience and performance.",
-                price: "<h2>1260<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 2600 </sub></h2>",
+                price: "<h2>1150<sup>QAR</sup></h2>",
                 button: "Get it now",
                 features: [
                     "Complete website design and development with <span>5</span> pages",
@@ -167,7 +167,7 @@ const translations = {
             {
                 title: "Gold Package",
                 description: "The ultimate choice for businesses and e-commerce platforms looking for a fully customized website with advanced features, unique design, and high performance to maximize sales.",
-                price: "<h2>1599<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 3400 </sub></h2>",
+                price: "<h2>1400<sup>QAR</sup></h2>",
                 button: "Get it now",
                 features: [
                     "Fully customized website tailored to client needs",

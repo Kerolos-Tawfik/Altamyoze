@@ -1115,7 +1115,7 @@ body:has(.offcanvas){
 	margin-left: 8px;
 	color: var(--dark-color);
 	position: absolute;
-	right: 15px;
+	right: 	80px;
     top: 50%;
 	transform: translateY(-50%);
 	transition: all 0.3s ease-out;
@@ -3468,6 +3468,7 @@ body:has(.offcanvas){
 .footer-contact-item{
 	display: flex;
 	align-items: center;
+width: 500px;
 	border-right: 1px solid var(--divider-color);
 	padding-right: 40px;
 	margin-right: 40px;
@@ -3477,11 +3478,10 @@ body:has(.offcanvas){
 	border: none;
 	padding-right: 0;
 	margin-right: 0;
+
 }
 
-.footer-contact-item .icon-box{
-	margin-right: 15px;
-}
+
 
 .footer-contact-item .icon-box i{
 	font-size: 24px;
@@ -3496,6 +3496,7 @@ body:has(.offcanvas){
 
 .footer-contact-item h3 a{
 	color: inherit;
+	
 }
 
 .footer-copyright{

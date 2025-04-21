@@ -32,7 +32,7 @@ const translations = {
             {
                 title: "الباقة البرونزية",
                 description: "احصل على تطبيق موبايل احترافي يعكس هوية علامتك التجارية، بتصميم جذاب وأداء سلس على Android و iOS. هذه الباقة مثالية للشركات الناشئة التي تسعى لتعزيز تواجدها الرقمي.",
-                price: "<h2>1000<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 2000 </sub></h2>",
+                price: "<h2>1000<sup>ريال</sup><sub> </h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تصميم وتطوير تطبيق موبايل مخصص لأنظمة Android و iOS",
@@ -46,7 +46,7 @@ const translations = {
             {
                 title: "الباقة الفضية",
                 description: "تطبيق موبايل متطور بميزات احترافية، مثالي للشركات المتوسطة التي ترغب في تحسين تجربة المستخدم وتعزيز تفاعل العملاء.",
-                price: "<h2>1700<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 3400 </sub></h2>",
+                price: "<h2>1700<sup>ريال</sup><sub> </h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تطبيق موبايل مخصص بالكامل لأنظمة Android و iOS",
@@ -60,7 +60,7 @@ const translations = {
             {
                 title: "الباقة الذهبية",
                 description: "أفضل اختيار للشركات والمتاجر الإلكترونية التي تحتاج إلى تطبيق احترافي متكامل بميزات متقدمة وأداء عالي.",
-                price: "<h2>2000<sup>ريال</sup><sub> خصم </sub><sub class=strikethrough-strong-money> 4000 </sub></h2>",
+                price: "<h2>2000<sup>ريال</sup><sub> </h2>",
                 button: "احصل عليها الآن",
                 features: [
                     "تصميم وتطوير تطبيق مخصص بالكامل مع ميزات ذكية",
@@ -134,7 +134,7 @@ const translations = {
             {
                 title: "Bronze Package",
                 description: "Get a professional mobile app for your business with a sleek and user-friendly design, optimized for both Android and iOS. This package is perfect for startups and small businesses looking to establish a strong mobile presence.",
-                price: "<h2>1000<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 2000 </sub></h2>",
+                price: "<h2>1000<sup>QAR</sup></h2>",
                 button: "Get it now",
                 features: [
                     "Custom mobile app for Android & iOS",
@@ -148,7 +148,7 @@ const translations = {
             {
                 title: "Silver Package",
                 description: "A dynamic mobile app with advanced features, ideal for medium-sized businesses looking to provide seamless user experiences and enhanced engagement.",
-                price: "<h2>1700<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 3400 </sub></h2>",
+                price: "<h2>1700<sup>QAR</sup></h2>",
                 button: "Get it now",
                 features: [
                     "Fully customized app for Android & iOS",
@@ -162,7 +162,7 @@ const translations = {
             {
                 title: "Gold Package",
                 description: "A high-end mobile app with top-tier performance, advanced security, and AI-powered features, ideal for e-commerce and large businesses.",
-                price: "<h2>2000<sup>QAR</sup><sub> Discount </sub><sub class=strikethrough-strong-money> 4000 </sub></h2>",
+                price: "<h2>2000<sup>QAR</sup></h2>",
                 button: "Get it now",
                 features: [
                     "Custom-built app with AI-driven features",

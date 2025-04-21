@@ -153,17 +153,14 @@ const updatePageLanguage = (lang) => {
     ".nav-menu-wrapper .navbar-nav .submenu ul li a, .slicknav_menu .slicknav_nav .slicknav_parent ul li a"
   );
   
-  const dropdownKeys = ["mobileDesign", "webDev", "digitalServices", "motionDesign"];
-  
   if (serviceDropdownItems) {
-    serviceDropdownItems.forEach((item, index) => {
-      if (index < dropdownKeys.length) {
-        const key = dropdownKeys[index];
-        item.textContent = selectedLang.serviceDropdownItems[key];
+    serviceDropdownItems.forEach((item) => {
+      const dataEn = item.getAttribute("data-en");
+      if (dataEn) {
+        item.textContent = lang === "en" ? dataEn : item.getAttribute("data-ar") || item.textContent;
       }
     });
   }
-  
 
   // Actualizar el título de la página de portfolio
   const profileHeaderTitle = document.querySelector(".page-header-box.profile h1");
