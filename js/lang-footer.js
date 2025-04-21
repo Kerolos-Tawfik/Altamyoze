@@ -47,52 +47,67 @@ const loadLanguages = () => {
     document.getElementById("language-toggle").checked = savedLang === "en";
 };
 function updatePageLanguages(lang) {
-    document.querySelector(".footer-newsletter-title h2").innerHTML = translationsFoter[lang].newsletterTitle;
-    document.querySelector("#mail").placeholder = translationsFoter[lang].newsletterPlaceholder;
+    const newsletterTitle = document.querySelector(".footer-newsletter-title h2");
+    if (newsletterTitle) {
+        newsletterTitle.innerHTML = translationsFoter[lang].newsletterTitle;
+    }
+    
+    const mailInput = document.querySelector("#mail");
+    if (mailInput) {
+        mailInput.placeholder = translationsFoter[lang].newsletterPlaceholder;
+    }
     
     let links = document.querySelectorAll(".footer-links h3");
-    links[0].textContent = translationsFoter[lang].quickLinks;
-    links[1].textContent = translationsFoter[lang].ourServices;
-    links[2].textContent = translationsFoter[lang].supportTitle;
+    if (links && links.length >= 3) {
+        links[0].textContent = translationsFoter[lang].quickLinks;
+        links[1].textContent = translationsFoter[lang].ourServices;
+        links[2].textContent = translationsFoter[lang].supportTitle;
+    }
     
     let quickLinks = document.querySelectorAll(".footer-links.two ul li a");
-    quickLinks[0].textContent = translationsFoter[lang].home;
-    quickLinks[1].textContent = translationsFoter[lang].about;
-    quickLinks[2].textContent = translationsFoter[lang].services;
-    quickLinks[3].textContent = translationsFoter[lang].portfolio;
+    if (quickLinks && quickLinks.length >= 4) {
+        quickLinks[0].textContent = translationsFoter[lang].home;
+        quickLinks[1].textContent = translationsFoter[lang].about;
+        quickLinks[2].textContent = translationsFoter[lang].services;
+        quickLinks[3].textContent = translationsFoter[lang].portfolio;
+    }
     
     let servicesLinks = document.querySelectorAll(".footer-links.three ul li a");
-    servicesLinks[0].textContent = translationsFoter[lang].webDevelopment;
-    servicesLinks[1].textContent = translationsFoter[lang].ecommerce;
-    servicesLinks[2].textContent = translationsFoter[lang].seo;
-    servicesLinks[3].textContent = translationsFoter[lang].support;
+    if (servicesLinks && servicesLinks.length >= 4) {
+        servicesLinks[0].textContent = translationsFoter[lang].webDevelopment;
+        servicesLinks[1].textContent = translationsFoter[lang].ecommerce;
+        servicesLinks[2].textContent = translationsFoter[lang].seo;
+        servicesLinks[3].textContent = translationsFoter[lang].support;
+    }
     
     let supportLinks = document.querySelectorAll(".footer-links.four ul li a");
-    supportLinks[0].textContent = translationsFoter[lang].help;
-    supportLinks[1].textContent = translationsFoter[lang].privacy;
-    supportLinks[2].textContent = translationsFoter[lang].terms;
-    supportLinks[3].textContent = translationsFoter[lang].contact;
+    if (supportLinks && supportLinks.length >= 4) {
+        supportLinks[0].textContent = translationsFoter[lang].help;
+        supportLinks[1].textContent = translationsFoter[lang].privacy;
+        supportLinks[2].textContent = translationsFoter[lang].terms;
+        supportLinks[3].textContent = translationsFoter[lang].contact;
+    }
     
-    document.querySelector(".footer-copyright-text p").textContent = translationsFoter[lang].copyright;
+    const copyrightText = document.querySelector(".footer-copyright-text p");
+    if (copyrightText) {
+        copyrightText.textContent = translationsFoter[lang].copyright;
+    }
     
-    document.querySelector("title").textContent = selectedLang.title;
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute("dir", lang === "en" ? "ltr" : "rtl");
 
-    document.querySelector(".switch .on").textContent = lang === "ar" ? "ar" : "ar";
-    document.querySelector(".switch .off").textContent = lang === "ar" ? "en" : "en";
+    const switchOn = document.querySelector(".switch .on");
+    const switchOff = document.querySelector(".switch .off");
+    if (switchOn) switchOn.textContent = lang === "ar" ? "ar" : "ar";
+    if (switchOff) switchOff.textContent = lang === "ar" ? "en" : "en";
 }
 
 document.getElementById("language-toggle").addEventListener("change", function () {
     const lang = this.checked ? "en" : "ar";
     localStorage.setItem("selectedLang", lang);
-    updatePageLanguages(lang);
-});
 
-loadLanguages();
-document.getElementById("language-toggle").addEventListener("change", function () {
-    const lang = this.checked ? "en" : "ar";
-    localStorage.setItem("selectedLang", lang);
+    // تحديث اللغة فوراً
+    updatePageLanguages(lang);
 
     const preloader = document.querySelector(".preloader");
 
@@ -101,10 +116,10 @@ document.getElementById("language-toggle").addEventListener("change", function (
     preloader.style.alignItems = "center";
     preloader.style.justifyContent = "center";
 
+    // إخفاء اللودر بعد فترة قصيرة للتأثير البصري
     setTimeout(() => {
-        updatePageLanguage(lang);
-
-        // إخفاء اللودر بعد انتهاء التحميل
         preloader.style.display = "none";
-    }, 1000); // مهلة صغيرة لمحاكاة التحميل
+    }, 500);
 });
+
+loadLanguages();

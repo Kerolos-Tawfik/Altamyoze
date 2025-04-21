@@ -184,85 +184,164 @@ const translations = {
   const updatePageLanguage = (lang) => {
     const selectedLang = translations[lang];
   
-    const navItems = document.querySelectorAll(
-      ".nav-menu-wrapper .navbar-nav .nav-item a"
-    );
+    // Update HTML direction attribute based on language
+    document.documentElement.setAttribute("dir", lang === "en" ? "ltr" : "rtl");
+    document.documentElement.setAttribute("lang", lang);
+  
+    // Update both desktop and mobile navigation items
+    const navItems = document.querySelectorAll(".nav-menu-wrapper .navbar-nav > .nav-item > a, .slicknav_menu .slicknav_nav > li > a");
     const keys = ["home", "about", "services", "products", "Contact"];
+    
+    if (navItems) {
+        navItems.forEach((item, index) => {
+            if (index < keys.length) {
+                item.textContent = selectedLang.nav[keys[index]];
+            }
+        });
+    }
   
-    navItems.forEach((item, index) => {
-      item.textContent = selectedLang.nav[keys[index]];
-    });
+    // Update dropdown items in both desktop and mobile menus
+    const serviceDropdownItems = document.querySelectorAll(".nav-menu-wrapper .navbar-nav .submenu ul li a, .slicknav_menu .slicknav_nav .submenu ul li a");
+    if (serviceDropdownItems) {
+        serviceDropdownItems.forEach((item) => {
+            const dataEn = item.getAttribute("data-en");
+            if (dataEn) {
+                item.textContent = lang === "en" ? dataEn : item.getAttribute("data-ar") || item.textContent;
+            }
+        });
+    }
   
-    document.querySelector(".page-header-box h1").innerHTML =
-      selectedLang.pageheaderbox;
-    document.querySelector(".footer-newsletter-title h2").innerHTML =
-      selectedLang.newsletterTitle;
-    document.querySelector("#mail").placeholder =
-      selectedLang.newsletterPlaceholder;
+    const pageHeaderBox = document.querySelector(".page-header-box h1");
+    if (pageHeaderBox) {
+        pageHeaderBox.innerHTML = selectedLang.pageheaderbox;
+    }
+    
+    const newsletterTitle = document.querySelector(".footer-newsletter-title h2");
+    if (newsletterTitle) {
+        newsletterTitle.innerHTML = selectedLang.newsletterTitle;
+    }
+    
+    const mailInput = document.querySelector("#mail");
+    if (mailInput) {
+        mailInput.placeholder = selectedLang.newsletterPlaceholder;
+    }
   
     let links = document.querySelectorAll(".footer-links h3");
-    links[0].textContent = selectedLang.quickLinks;
-    links[1].textContent = selectedLang.ourServices;
-    links[2].textContent = selectedLang.supportTitle;
+    if (links && links.length >= 3) {
+        links[0].textContent = selectedLang.quickLinks;
+        links[1].textContent = selectedLang.ourServices;
+        links[2].textContent = selectedLang.supportTitle;
+    }
   
     let quickLinks = document.querySelectorAll(".footer-links.two ul li a");
-    quickLinks[0].textContent = selectedLang.home;
-    quickLinks[1].textContent = selectedLang.about;
-    quickLinks[2].textContent = selectedLang.services;
-    quickLinks[3].textContent = selectedLang.portfolio;
+    if (quickLinks && quickLinks.length >= 4) {
+        quickLinks[0].textContent = selectedLang.home;
+        quickLinks[1].textContent = selectedLang.about;
+        quickLinks[2].textContent = selectedLang.services;
+        quickLinks[3].textContent = selectedLang.portfolio;
+    }
   
     let servicesLinks = document.querySelectorAll(".footer-links.three ul li a");
-    servicesLinks[0].textContent = selectedLang.webDevelopment;
-    servicesLinks[1].textContent = selectedLang.ecommerce;
-    servicesLinks[2].textContent = selectedLang.seo;
-    servicesLinks[3].textContent = selectedLang.support;
+    if (servicesLinks && servicesLinks.length >= 4) {
+        servicesLinks[0].textContent = selectedLang.webDevelopment;
+        servicesLinks[1].textContent = selectedLang.ecommerce;
+        servicesLinks[2].textContent = selectedLang.seo;
+        servicesLinks[3].textContent = selectedLang.support;
+    }
   
     let supportLinks = document.querySelectorAll(".footer-links.four ul li a");
-    supportLinks[0].textContent = selectedLang.help;
-    supportLinks[1].textContent = selectedLang.privacy;
-    supportLinks[2].textContent = selectedLang.terms;
-    supportLinks[3].textContent = selectedLang.contact;
+    if (supportLinks && supportLinks.length >= 4) {
+        supportLinks[0].textContent = selectedLang.help;
+        supportLinks[1].textContent = selectedLang.privacy;
+        supportLinks[2].textContent = selectedLang.terms;
+        supportLinks[3].textContent = selectedLang.contact;
+    }
   
-    document.querySelector(".footer-copyright-text p").textContent =
-      selectedLang.copyright;
+    const copyrightText = document.querySelector(".footer-copyright-text p");
+    if (copyrightText) {
+        copyrightText.textContent = selectedLang.copyright;
+    }
   
-    document.querySelector(".section-title.testimonial h3").textContent = translations[lang].testimonialsTitle;
-    document.querySelector(".section-title.testimonial h2").innerHTML = translations[lang].testimonialsSubtitle;
-    document.querySelector(".section-btn.testimonial a").textContent = translations[lang].contactUs;
+    const testimonialTitle = document.querySelector(".section-title.testimonial h3");
+    if (testimonialTitle) {
+        testimonialTitle.textContent = translations[lang].testimonialsTitle;
+    }
     
-    document.querySelectorAll(".testimonial-item").forEach((item, index) => {
-        if (translations[lang].testimonials[index]) {
-            item.querySelector(".testimonial-content p").textContent = translations[lang].testimonials[index].text;
-            item.querySelector(".testimonial-author h3").textContent = translations[lang].testimonials[index].name;
-            item.querySelector(".testimonial-author p").textContent = translations[lang].testimonials[index].role;
-        }
-    });
+    const testimonialSubtitle = document.querySelector(".section-title.testimonial h2");
+    if (testimonialSubtitle) {
+        testimonialSubtitle.innerHTML = translations[lang].testimonialsSubtitle;
+    }
     
-    document.querySelectorAll(".testimonial-counter p").forEach(counter => {
-        counter.textContent = translations[lang].satisfactionRate;
-    });
+    const contactUsBtn = document.querySelector(".section-btn.testimonial a");
+    if (contactUsBtn) {
+        contactUsBtn.textContent = translations[lang].contactUs;
+    }
+    
+    const testimonialItems = document.querySelectorAll(".testimonial-item");
+    if (testimonialItems) {
+        testimonialItems.forEach((item, index) => {
+            if (translations[lang].testimonials[index]) {
+                const contentP = item.querySelector(".testimonial-content p");
+                const authorName = item.querySelector(".testimonial-author h3");
+                const authorRole = item.querySelector(".testimonial-author p");
+                
+                if (contentP) contentP.textContent = translations[lang].testimonials[index].text;
+                if (authorName) authorName.textContent = translations[lang].testimonials[index].name;
+                if (authorRole) authorRole.textContent = translations[lang].testimonials[index].role;
+            }
+        });
+    }
+    
+    const testimonialCounters = document.querySelectorAll(".testimonial-counter p");
+    if (testimonialCounters) {
+        testimonialCounters.forEach(counter => {
+            counter.textContent = translations[lang].satisfactionRate;
+        });
+    }
 
+    const servicesTitle1 = document.querySelector(".page-services.one .section-title h2");
+    if (servicesTitle1) {
+        servicesTitle1.innerHTML = translations[lang].servicesTitle1;
+    }
+    
+    const servicesTitle2 = document.querySelector(".page-services.two .section-title h2");
+    if (servicesTitle2) {
+        servicesTitle2.innerHTML = translations[lang].servicesTitle2;
+    }
+    
+    const servicesTitle3 = document.querySelector(".page-services.three .section-title h2");
+    if (servicesTitle3) {
+        servicesTitle3.innerHTML = translations[lang].servicesTitle3;
+    }
 
-    document.querySelector(".page-services.one .section-title h2").innerHTML = translations[lang].servicesTitle1;
-    document.querySelector(".page-services.two .section-title h2").innerHTML = translations[lang].servicesTitle2;
-    document.querySelector(".page-services.three .section-title h2").innerHTML = translations[lang].servicesTitle3;
+    const serviceTitles = document.querySelectorAll(".service-item-content h3");
+    if (serviceTitles) {
+        serviceTitles.forEach((title, index) => {
+            if (translations[lang].serviceTitles[index]) {
+                title.textContent = translations[lang].serviceTitles[index];
+            }
+        });
+    }
 
-    document.querySelectorAll(".service-item-content h3").forEach((title, index) => {
-        title.textContent = translations[lang].serviceTitles[index];
-    });
+    const serviceDescriptions = document.querySelectorAll(".service-item-content p");
+    if (serviceDescriptions) {
+        serviceDescriptions.forEach((desc, index) => {
+            if (translations[lang].serviceDescriptions[index]) {
+                desc.textContent = translations[lang].serviceDescriptions[index];
+            }
+        });
+    }
 
-    document.querySelectorAll(".service-item-content p").forEach((desc, index) => {
-        desc.textContent = translations[lang].serviceDescriptions[index];
-    });
-
-    document.querySelectorAll(".readmore-btn").forEach(btn => {
-        btn.textContent = translations[lang].readMore;
-    });
-
+    const readMoreBtns = document.querySelectorAll(".readmore-btn");
+    if (readMoreBtns) {
+        readMoreBtns.forEach(btn => {
+            btn.textContent = translations[lang].readMore;
+        });
+    }
   
-    document.querySelector("title").textContent = selectedLang.title;
-    document.documentElement.setAttribute("lang", lang);
-    document.documentElement.setAttribute("dir", lang === "en" ? "ltr" : "rtl");
+    // Update title element with null check
+    const titleElement = document.querySelector("title");
+    if (titleElement) titleElement.textContent = selectedLang.title;
   };
   
   document
@@ -276,10 +355,11 @@ const translations = {
       preloader.style.alignItems = "center";
       preloader.style.justifyContent = "center";
   
+      updatePageLanguage(lang);
+      
       setTimeout(() => {
-        updatePageLanguage(lang);
         preloader.style.display = "none";
-      }, 1000);
+      }, 500);
     });
   
   loadLanguage();

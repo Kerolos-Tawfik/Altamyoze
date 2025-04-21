@@ -52,7 +52,6 @@ const translations = {
     },
     submit: "أرسل الرسالة"
        
-
       
     },
     en: {
@@ -117,21 +116,41 @@ const translations = {
     updatePageLanguage(savedLang);
     document.getElementById("language-toggle").checked = savedLang === "en";
   };
-  
+
   const updatePageLanguage = (lang) => {
     const selectedLang = translations[lang];
   
+    // Update both desktop and mobile navigation items
     const navItems = document.querySelectorAll(
-      ".nav-menu-wrapper .navbar-nav .nav-item a"
+      ".nav-menu-wrapper .navbar-nav > .nav-item > a, .slicknav_menu .slicknav_nav > li > a"
     );
     const keys = ["home", "about", "services", "products", "Contact"];
   
-    navItems.forEach((item, index) => {
-      item.textContent = selectedLang.nav[keys[index]];
-    });
+    if (navItems) {
+      navItems.forEach((item, index) => {
+        if (index < keys.length) {
+          item.textContent = selectedLang.nav[keys[index]];
+        }
+      });
+    }
+    
+    // Update dropdown items in both desktop and mobile menus
+    const serviceDropdownItems = document.querySelectorAll(".nav-menu-wrapper .navbar-nav .submenu ul li a, .slicknav_menu .slicknav_nav .submenu ul li a");
+    if (serviceDropdownItems) {
+        serviceDropdownItems.forEach((item) => {
+            const dataEn = item.getAttribute("data-en");
+            if (dataEn) {
+                item.textContent = lang === "en" ? dataEn : item.getAttribute("data-ar") || item.textContent;
+            }
+        });
+    }
+    
+    // Update page header title
+    const pageHeaderTitle = document.querySelector(".page-header-box h1");
+    if (pageHeaderTitle) {
+        pageHeaderTitle.innerHTML = lang === "en" ? 'Contact <span>Us</span>' : 'تواصل <span>معنا</span>';
+    }
   
-    document.querySelector(".page-header-box h1").innerHTML =
-      selectedLang.pageheaderbox;
     document.querySelector(".footer-newsletter-title h2").innerHTML =
       selectedLang.newsletterTitle;
     document.querySelector("#mail").placeholder =
@@ -184,7 +203,7 @@ const translations = {
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute("dir", lang === "en" ? "ltr" : "rtl");
   };
-  
+
   document
     .getElementById("language-toggle")
     .addEventListener("change", function () {
@@ -196,10 +215,11 @@ const translations = {
       preloader.style.alignItems = "center";
       preloader.style.justifyContent = "center";
   
+      updatePageLanguage(lang);
+      
       setTimeout(() => {
-        updatePageLanguage(lang);
         preloader.style.display = "none";
-      }, 1000);
+      }, 500);
     });
   
   loadLanguage();
